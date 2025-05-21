@@ -1,3 +1,3 @@
 /* Das ist nur ein test */
 
-/* mal in sas angepackt und geändert  */
+/* mal in sas angepackt und geändert */
