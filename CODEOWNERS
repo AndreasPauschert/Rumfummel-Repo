@@ -3,7 +3,7 @@
 # Kommentare beginnen mit einem '#'
 
 # Besitzer für alle Dateien im Repository
-# * @default-owner
+* @AndreasPauschert
 
 # Besitzer für alle Dateien im Verzeichnis /docs
 # /INCLUDE_TP-Aufbereitung/ @AndreasPauschert
