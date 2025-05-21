@@ -1,0 +1,50 @@
+name: Validate Author Permissions
+
+on:
+pull_request:
+types: [opened, synchronize, reopened]
+
+jobs:
+check-author-access:
+runs-on: ubuntu-latest
+
+steps:
+- name: Checkout PR code
+uses: actions/checkout@v3
+
+- name: Extract changed files
+id: files
+run: |
+echo "::set-output name=files::$(git diff --name-only origin/main...HEAD | xargs)"
+
+- name: Validate file ownership
+run: |
+echo "Changed files: ${{ steps.files.outputs.files }}"
+PR_AUTHOR="${{ github.actor }}"
+INVALID_FILES=""
+
+for FILE in ${{ steps.files.outputs.files }}
+do
+DIR=$(echo "$FILE" | cut -d '/' -f1)
+
+if [[ "$DIR" == *_AP ]]; then
+if [[ "$PR_AUTHOR" != "AndreasPauschert" ]]; then
+INVALID_FILES+="$FILE\n"
+fi
+elif [[ "$DIR" == *_MB ]]; then
+if [[ "$PR_AUTHOR" != "Metabee652" ]]; then
+INVALID_FILES+="$FILE\n"
+fi
+# Optional: alle anderen Verzeichnisse blockieren
+else
+INVALID_FILES+="$FILE\n"
+fi
+done
+
+if [[ "$INVALID_FILES" != "" ]]; then
+echo -e "⛔ Unerlaubte Änderungen durch $PR_AUTHOR an:\n$INVALID_FILES"
+echo "::error::Fehlende Berechtigung für folgende Dateien:\n$INVALID_FILES"
+exit 1
+else
+echo "✅ Alle Änderungen sind erlaubt für $PR_AUTHOR"
+fi
