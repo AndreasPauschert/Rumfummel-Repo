@@ -1,0 +1,19 @@
+# Jede Zeile ist ein Dateimuster, gefolgt von einem oder mehreren Besitzern.
+
+# Kommentare beginnen mit einem '#'
+
+# Besitzer für alle Dateien im Repository
+# * @default-owner
+
+# Besitzer für alle Dateien im Verzeichnis /docs
+# /INCLUDE_TP-Aufbereitung/ @AndreasPauschert
+# /REPORT_Amazon/ @Metabee652
+/*_AP/ @AndreasPauschert
+/*_MB/ @Metabee652
+
+
+# Besitzer für eine bestimmte Datei
+# README.md @specific-owner
+
+# Besitzer für alle JavaScript-Dateien
+# *.js @js-team

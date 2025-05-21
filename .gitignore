@@ -1,0 +1,11 @@
+# Ignoriere alle Dateien
+*
+
+# Ignoriere keine .sas und .egp Dateien
+!CODEOWNERS
+!.gitignore
+!*.sas
+!*.egp
+
+# Ignoriere keine Verzeichnisse
+!*/
