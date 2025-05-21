@@ -4,6 +4,7 @@
 # Ignoriere keine .sas und .egp Dateien
 !CODEOWNERS
 !.gitignore
+!*.ipynb
 !*.sas
 !*.egp
 
