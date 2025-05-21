@@ -7,6 +7,7 @@
 Metabee macht einen Change
 Metabee macht noch einen Change, diesmal beim default owner
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 Metabee macht noch einen Change, nachdem die Protection Rules eingestellt wurde
 <<<<<<< HEAD
@@ -23,3 +24,7 @@ und wieder mache ich einen change bei Andreas
 =======
 und wieder mache ich einen change bei Andreas 
 >>>>>>> 79a72d3 (änderungen fertig)
+=======
+Metabee macht noch einen Change, nachdem die Protection Rules eingestellt wurde
+und wieder mache ich einen change bei Andreas 
+>>>>>>> 79a72d399393ae2d9f286e4e2788d8f34348ee32
