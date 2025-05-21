@@ -9,6 +9,7 @@ Metabee macht noch einen Change, diesmal beim default owner
 <<<<<<< HEAD
 <<<<<<< Updated upstream
 Metabee macht noch einen Change, nachdem die Protection Rules eingestellt wurde
+<<<<<<< HEAD
 =======
 Metabee macht noch einen Change, nachdem die Protection Rules eingestellt wurde
 und wieder mache ich einen change bei Andreas 
@@ -19,3 +20,6 @@ Andreas ändert jetzt an dem code etwas, der nur ihm gehört
 Metabee macht noch einen Change, nachdem die Protection Rules eingestellt wurde
 und wieder mache ich einen change bei Andreas
 >>>>>>> 0af287c (oh, der ist ja geschützt)
+=======
+und wieder mache ich einen change bei Andreas 
+>>>>>>> 79a72d3 (änderungen fertig)
